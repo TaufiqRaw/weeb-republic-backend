@@ -12,6 +12,7 @@ import { UserModule } from './user/user.module';
 import { AtGuard } from './authentication/guards/at.guard';
 import { MediaModule } from './media/media.module';
 import { AuthorizationModule } from './authorization/authorization.module';
+import { AnimeModule } from './anime/anime.module';
 import AdminGuard from './authentication/guards/admin.guard';
 
 @Module({
@@ -46,6 +47,7 @@ import AdminGuard from './authentication/guards/admin.guard';
     UserModule,
     MediaModule,
     AuthorizationModule,
+    AnimeModule,
   ],
   controllers: [AppController],
   providers: [
