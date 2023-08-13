@@ -80,16 +80,6 @@
           "nullable": true,
           "mappedType": "string"
         },
-        "phone": {
-          "name": "phone",
-          "type": "varchar(13)",
-          "unsigned": false,
-          "autoincrement": false,
-          "primary": false,
-          "nullable": true,
-          "length": 13,
-          "mappedType": "string"
-        },
         "refresh_token": {
           "name": "refresh_token",
           "type": "varchar(255)",

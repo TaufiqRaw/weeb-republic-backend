@@ -23,17 +23,13 @@ export class User extends CustomBaseEntity{
     @Property()
     profilePicture? : string; 
 
-    @Property({length:13})
-    phone? : string;
-
     @Property({hidden:true})
     refreshToken ? : string;
 
-    constructor({name,email,isAdmin = false,password, profilePicture, phone}:UserProps){
+    constructor({name,email,isAdmin = false,password, profilePicture}:UserProps){
       super();
       this.name = name,
       this.email = email,
-      this.phone = phone,
       this.isAdmin = isAdmin
       this.password = password;
       this.profilePicture = profilePicture;
